@@ -30,6 +30,6 @@ jobs:
       - name: Install Dependencies
         run: yarn install --prefer-offline
       - name: Run eslint
-        run: yarn lint
+        run: yarn run lint
       - name: Run prettier
         run: yarn run check
