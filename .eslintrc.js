@@ -22,7 +22,8 @@ module.exports = {
     "plugins": [
         "react",
         "react-hooks",
-        "@typescript-eslint"
+        "@typescript-eslint",
+        "prettier"
     ],
     "rules": {
         'react-hooks/rules-of-hooks': 'error',
