@@ -1,9 +1,19 @@
 import React from "react";
-import { Controller } from "./controllers/blackJackController";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Initial from "./pages/Initial";
+import Game from "./pages/Game";
 
 const App: React.FC = () => {
-  new Controller();
-  return <div id="root">p</div>;
+  return (
+    <>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Initial />} />
+          <Route path="game/" element={<Game />} />
+        </Routes>
+      </BrowserRouter>
+    </>
+  );
 };
 
 export default App;
