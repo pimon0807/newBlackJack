@@ -33,3 +33,8 @@ jobs:
         run: yarn run lint
       - name: Run prettier
         run: yarn run check
+      - name: Dploy to netlify
+        run: npx netlify-cli deploy -- dir=./index.tsx
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
