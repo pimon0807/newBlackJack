@@ -1,11 +1,9 @@
 import React from "react";
+import { Controller } from "./controllers/blackJackController";
 
 const App: React.FC = () => {
-  return (
-    <div>
-      <p>hello react</p>
-    </div>
-  );
+  new Controller();
+  return <div id="root">p</div>;
 };
 
 export default App;
